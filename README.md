@@ -3,9 +3,9 @@
 Multi-platform Twitter Client built with Electron
 
 # Download
-* [Twitter.Mini-1.0.0.dmg](https://github.com/dongri/twitter-mini/releases/download/v1.0.0/Twitter.Mini-1.0.0.dmg)
-* [twitter-mini_1.0.0_amd64.deb](https://github.com/dongri/twitter-mini/releases/download/v1.0.0/twitter-mini_1.0.0_amd64.deb)
-* [Twitter.Mini.Setup.1.0.0.exe](https://github.com/dongri/twitter-mini/releases/download/v1.0.0/Twitter.Mini.Setup.1.0.0.exe)
+* :green-apple: [Twitter.Mini-1.0.0.dmg](https://github.com/dongri/twitter-mini/releases/download/v1.0.0/Twitter.Mini-1.0.0.dmg)
+* :penguin: [twitter-mini_1.0.0_amd64.deb](https://github.com/dongri/twitter-mini/releases/download/v1.0.0/twitter-mini_1.0.0_amd64.deb)
+* :briefcase: [Twitter.Mini.Setup.1.0.0.exe](https://github.com/dongri/twitter-mini/releases/download/v1.0.0/Twitter.Mini.Setup.1.0.0.exe)
 
 # Development
 ```
