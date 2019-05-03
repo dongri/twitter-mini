@@ -16,3 +16,10 @@ $ npm start
 ```
 $ npm run package-mac
 ```
+
+# app icons
+```
+$ npm i -g electron-icon-maker
+
+$ electron-icon-maker --input=./assets/twitter-mini.png --output=./assets/icons
+```
