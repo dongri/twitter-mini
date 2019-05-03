@@ -1,0 +1,33 @@
+{
+  "name": "twitter-mini",
+  "version": "1.0.0",
+  "description": "Twitter mini for Twitter Desktop APP",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build:mac": "node .electron-vue/build.js && electron-builder --mac --x64",
+    "build:windows": "node .electron-vue/build.js && electron-builder --win --x64",
+    "build:linux": "node .electron-vue/build.js && electron-builder --linux --x64"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongri/twitter-mini.git"
+  },
+  "keywords": [
+    "twitter",
+    "electron",
+    "macos",
+    "linux",
+    "windows"
+  ],
+  "author": "Dongri Jin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dongri/twitter-mini/issues"
+  },
+  "homepage": "https://github.com/dongri/twitter-mini#readme",
+  "devDependencies": {
+    "electron": "^5.0.0",
+    "electron-positioner": "=3.0.0"
+  }
+}
