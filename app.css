@@ -10,6 +10,8 @@
 #about-image {
   width: 140px;
   height: 140px;
+  background: #444;
+  border-radius: 5px;
 }
 
 #about-body {
