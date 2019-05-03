@@ -39,5 +39,31 @@ $ npm run package-win
 
 # brew cask
 ```
-$ brew create https://github.com/
+$ wget https://github.com/dongri/twitter-mini/releases/download/v1.0.3/Twitter.Mini-1.0.3.dmg
+$ shasum -a 256 ~/Downloads/Twitter.Mini-1.0.3.dmg 
+cc7d3a2f63477fafbb9d85b565ae4c373504c6ad6ac36298b727fbf7dc1586fc  /Users/dongri/Downloads/Twitter.Mini-1.0.3.dmg
+
+$ brew cask create twitter-mini
+Editing /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/Casks/twitter-mini.rb
+
+$ vim /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/Casks/twitter-mini.rb
+
+cask 'twitter-mini' do
+  version '1.0.3'
+  sha256 'cc7d3a2f63477fafbb9d85b565ae4c373504c6ad6ac36298b727fbf7dc1586fc'
+
+  url "https://github.com/dongri/twitter-mini/releases/download/v#{version}/Twitter.Mini-#{version}.dmg"
+  name 'Twitter Mini'
+  homepage 'https://github.com/dongri/twitter-mini'
+
+  app 'Twitter Mini.app'
+end
+
+# fork Homebrew/homebrew-cask
+
+$ cd homebrew-cask/Casks
+$ cp /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/Casks/twitter-mini.rb ./
+$ git push origin master
+
+# open pull request
 ```
