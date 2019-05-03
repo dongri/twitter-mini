@@ -2,6 +2,7 @@
 
 const path = require('path');
 const electron = require('electron');
+const shell = electron.shell;
 const BrowserWindow = electron.BrowserWindow;
 const Menu = electron.Menu;
 const Tray = electron.Tray;
@@ -179,6 +180,13 @@ app.on('ready', function () {
     appIcon.window.on('blur', hideWindow);
     appIcon.window.setBackgroundColor("#000000");
     appIcon.window.setVisibleOnAllWorkspaces(true);
+
+    // Open External Link
+    appIcon.window.webContents.on('new-window', (event, url) => {
+      event.preventDefault();
+      shell.openExternal(url);
+    })
+
     // appIcon.window.webContents.openDevTools();
 
     initMenu();
