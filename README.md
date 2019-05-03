@@ -2,6 +2,10 @@
 
 Multi-platform Twitter Client built with Electron
 
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/140596581@N07/46846919315/in/dateposted-public/" title="twitter-mini-1"><img src="https://live.staticflickr.com/65535/46846919315_5202dc4c2f_m.jpg" width="217" height="240" alt="twitter-mini-1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/140596581@N07/46846919905/in/dateposted-public/" title="twitter-mini-2"><img src="https://live.staticflickr.com/65535/46846919905_131a37651e_m.jpg" width="223" height="240" alt="twitter-mini-2"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
 # Download
 * :apple: macOS [Twitter.Mini-1.0.0.dmg](https://github.com/dongri/twitter-mini/releases/download/v1.0.0/Twitter.Mini-1.0.0.dmg)
 * :penguin: Linux [twitter-mini_1.0.0_amd64.deb](https://github.com/dongri/twitter-mini/releases/download/v1.0.0/twitter-mini_1.0.0_amd64.deb)
