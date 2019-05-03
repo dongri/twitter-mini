@@ -1,19 +1,18 @@
 # Twitter Mini
 
-Twitter mini for Twitter app
+Multi-platform Twitter Client built with Electron
 
 # Development
 ```
 $ node -v
 v12.0.0
 
-$ npm init
+$ npm install
 
-$ npm i -D electron@latest
+$ npm start
 ```
 
 # Packaging
 ```
-$ npm i -g electron-packager
-$ electron-packager . twitter-mini --platform=darwin,win32 --arch=x64 --overwrite
+$ npm run package-mac
 ```

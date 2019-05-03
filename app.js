@@ -12,11 +12,27 @@ var Positioner = require('electron-positioner');
 var iconIdle = path.join(__dirname, 'images', 'icon-idle.png');
 var iconActive = path.join(__dirname, 'images', 'icon-active.png');
 
+
 var appIcon;
 var cachedBounds;
 
+var appName = "Twitter Mini";
+var appURL = "https://twitter.com";
+var appDefaultWidth = 500;
+var appAboutWindow;
+
 // アプリ起動後dockからアイコンを消す
-app.dock.hide(); 
+// app.dock.hide();
+
+function showAbout() {
+  if (appAboutWindow == null) {
+    appAboutWindow = new BrowserWindow({ width: 300, height: 500, 'titleBarStyle': 'hidden-inset' });
+    appAboutWindow.on('closed', function () {
+      appAboutWindow = null;
+    });
+  }
+  appAboutWindow.loadURL('file://' + __dirname + '/about.html');
+}
 
 app.on('ready', function () {
 
@@ -28,7 +44,7 @@ app.on('ready', function () {
   function initMenu() {
     const template = [
       {
-        label: 'Twitter Mini',
+        label: appName,
         submenu: [
           {
             label: 'About Twitter Mini',
@@ -49,6 +65,31 @@ app.on('ready', function () {
         ]
       },
       {
+        label: 'Edit',
+        submenu: [
+          {
+            label: 'Cut',
+            accelerator: 'Command+X',
+            selector: 'cut:'
+          },
+          {
+            label: 'Copy',
+            accelerator: 'Command+C',
+            selector: 'copy:'
+          },
+          {
+            label: 'Paste',
+            accelerator: 'Command+V',
+            selector: 'paste:'
+          },
+          {
+            label: 'Select All',
+            accelerator: 'Command+A',
+            selector: 'selectAll:'
+          }
+        ]
+      },
+      {
         label: 'View',
         submenu: [
           {
@@ -64,7 +105,7 @@ app.on('ready', function () {
             label: 'Mobile',
             click(item, focusedWindow) {
               if (focusedWindow) {
-                appIcon.window.setSize(500, size.height);
+                appIcon.window.setSize(appDefaultWidth, size.height);
                 showWindow(cachedBounds);
               }
             }
@@ -125,7 +166,7 @@ app.on('ready', function () {
   function initWindow() {
     var size = electron.screen.getPrimaryDisplay().size;
     var defaults = {
-      width: 500,
+      width: appDefaultWidth,
       height: size.height,
       show: false,
       frame: false,
@@ -134,7 +175,7 @@ app.on('ready', function () {
 
     appIcon.window = new BrowserWindow(defaults);
     appIcon.positioner = new Positioner(appIcon.window);
-    appIcon.window.loadURL('https://twitter.com');
+    appIcon.window.loadURL(appURL);
     appIcon.window.on('blur', hideWindow);
     appIcon.window.setBackgroundColor("#000000");
     appIcon.window.setVisibleOnAllWorkspaces(true);

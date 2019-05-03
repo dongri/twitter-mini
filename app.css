@@ -1,0 +1,28 @@
+
+#about-content {
+  font-family: monospace;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;  
+}
+
+#about-image {
+  width: 140px;
+  height: 140px;
+}
+
+#about-body {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#about-footer {
+  font-family: monospace;
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
