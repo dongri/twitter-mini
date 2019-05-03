@@ -11,6 +11,10 @@ Multi-platform Twitter Client built with Electron
 * :penguin: Linux [twitter-mini_1.0.3_amd64.deb](https://github.com/dongri/twitter-mini/releases/download/v1.0.3/twitter-mini_1.0.3_amd64.deb)
 * :briefcase: Windows [Twitter.Mini.Setup.1.0.3.exe](https://github.com/dongri/twitter-mini/releases/download/v1.0.3/Twitter.Mini.Setup.1.0.3.exe)
 
+```
+$ brew tap dongri/homebrew-cask
+$ brew cask install twitter-mini
+```
 # Development
 ```
 $ node -v
