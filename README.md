@@ -12,14 +12,18 @@ $ npm install
 $ npm start
 ```
 
-# Packaging
-```
-$ npm run package-mac
-```
-
-# app icons
+# Make app icons
 ```
 $ npm i -g electron-icon-maker
 
 $ ./make-icon.sh
+```
+
+# Packaging
+```
+$ npm run package-osx
+
+$ npm run package-linux
+
+$ npm run package-win
 ```
