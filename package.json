@@ -1,6 +1,6 @@
 {
   "name": "twitter-mini",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Twitter mini for Twitter Desktop APP",
   "main": "app.js",
   "scripts": {
