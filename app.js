@@ -19,7 +19,7 @@ var cachedBounds;
 
 var appName = "Twitter Mini";
 var appURL = "https://twitter.com";
-var appDefaultWidth = 500;
+var appDefaultWidth = 600;
 var appAboutWindow;
 
 // アプリ起動後dockからアイコンを消す

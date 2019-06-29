@@ -1,6 +1,6 @@
 #!/bin/bash
 
-electron-icon-maker --input=./assets/twitter-mini.png --output=./assets
+electron-icon-maker --input=./assets/twitter-mini-active.png --output=./assets
 mv ./assets/icons/mac/* ./assets/icons
 mv ./assets/icons/win/* ./assets/icons
 mv ./assets/icons/png/* ./assets/icons
